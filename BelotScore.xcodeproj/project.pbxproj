@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F16B180273FFF0D00E281D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F16B17F273FFF0D00E281D0 /* AppDelegate.swift */; };
+		9F16B184273FFF0D00E281D0 /* StartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F16B183273FFF0D00E281D0 /* StartController.swift */; };
+		9F16B189273FFF0F00E281D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F16B188273FFF0F00E281D0 /* Assets.xcassets */; };
+		9F16B18C273FFF0F00E281D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F16B18A273FFF0F00E281D0 /* LaunchScreen.storyboard */; };
+		9F2DC13C274EF56D006FF455 /* CalculationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2DC13B274EF56D006FF455 /* CalculationViewController.swift */; };
+		9F2DC13E274F015B006FF455 /* CalculationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2DC13D274F015B006FF455 /* CalculationViewModel.swift */; };
+		9F2DC140274F0166006FF455 /* CalculationViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2DC13F274F0166006FF455 /* CalculationViewModelImpl.swift */; };
+		9F32BCAD27529EE9000148BF /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F32BCAC27529EE9000148BF /* UIViewController + Extension.swift */; };
+		9F7A81632742AFEB002D6E38 /* PointsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7A81622742AFEB002D6E38 /* PointsViewController.swift */; };
+		9F7A81652742B03B002D6E38 /* PointsViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7A81642742B03B002D6E38 /* PointsViewModelImpl.swift */; };
+		9F7A81672742B046002D6E38 /* PointsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7A81662742B046002D6E38 /* PointsViewModel.swift */; };
+		9F95F2062741C5A0000E6B3C /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F95F2052741C5A0000E6B3C /* UIView + Extension.swift */; };
+		9FA942DE274585760091C54F /* PointsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA942DD274585760091C54F /* PointsTableViewCell.swift */; };
+		C56541C15BB7C7BB9A3A2336 /* Pods_BelotScore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DE6C154E65DC84454395A6E /* Pods_BelotScore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1DE6C154E65DC84454395A6E /* Pods_BelotScore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BelotScore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F16B17C273FFF0D00E281D0 /* BelotScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BelotScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F16B17F273FFF0D00E281D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9F16B183273FFF0D00E281D0 /* StartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartController.swift; sourceTree = "<group>"; };
+		9F16B188273FFF0F00E281D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F16B18B273FFF0F00E281D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9F16B18D273FFF0F00E281D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F2DC13B274EF56D006FF455 /* CalculationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationViewController.swift; sourceTree = "<group>"; };
+		9F2DC13D274F015B006FF455 /* CalculationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationViewModel.swift; sourceTree = "<group>"; };
+		9F2DC13F274F0166006FF455 /* CalculationViewModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationViewModelImpl.swift; sourceTree = "<group>"; };
+		9F32BCAC27529EE9000148BF /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
+		9F7A81622742AFEB002D6E38 /* PointsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsViewController.swift; sourceTree = "<group>"; };
+		9F7A81642742B03B002D6E38 /* PointsViewModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsViewModelImpl.swift; sourceTree = "<group>"; };
+		9F7A81662742B046002D6E38 /* PointsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsViewModel.swift; sourceTree = "<group>"; };
+		9F95F2052741C5A0000E6B3C /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
+		9FA942DD274585760091C54F /* PointsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsTableViewCell.swift; sourceTree = "<group>"; };
+		A015141249B7764B26F4E087 /* Pods-BelotScore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BelotScore.release.xcconfig"; path = "Target Support Files/Pods-BelotScore/Pods-BelotScore.release.xcconfig"; sourceTree = "<group>"; };
+		CC354B490C187C226F90A67D /* Pods-BelotScore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BelotScore.debug.xcconfig"; path = "Target Support Files/Pods-BelotScore/Pods-BelotScore.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F16B179273FFF0D00E281D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C56541C15BB7C7BB9A3A2336 /* Pods_BelotScore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A1708084A90811AE8B25592 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DE6C154E65DC84454395A6E /* Pods_BelotScore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B6FF6C3DC1AD582A307C13F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC354B490C187C226F90A67D /* Pods-BelotScore.debug.xcconfig */,
+				A015141249B7764B26F4E087 /* Pods-BelotScore.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9F16B173273FFF0D00E281D0 = {
+			isa = PBXGroup;
+			children = (
+				9F16B17E273FFF0D00E281D0 /* BelotScore */,
+				9F16B17D273FFF0D00E281D0 /* Products */,
+				6B6FF6C3DC1AD582A307C13F /* Pods */,
+				6A1708084A90811AE8B25592 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9F16B17D273FFF0D00E281D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F16B17C273FFF0D00E281D0 /* BelotScore.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F16B17E273FFF0D00E281D0 /* BelotScore */ = {
+			isa = PBXGroup;
+			children = (
+				9F7A81582742AEAF002D6E38 /* Belot */,
+				9F95F2042741C484000E6B3C /* Extensions */,
+				9F16B17F273FFF0D00E281D0 /* AppDelegate.swift */,
+				9F16B188273FFF0F00E281D0 /* Assets.xcassets */,
+				9F16B18A273FFF0F00E281D0 /* LaunchScreen.storyboard */,
+				9F16B18D273FFF0F00E281D0 /* Info.plist */,
+			);
+			path = BelotScore;
+			sourceTree = "<group>";
+		};
+		9F7A81582742AEAF002D6E38 /* Belot */ = {
+			isa = PBXGroup;
+			children = (
+				9F7A815E2742AF48002D6E38 /* Repository */,
+				9F7A815D2742AF35002D6E38 /* Model */,
+				9F7A815F2742AF63002D6E38 /* Views */,
+			);
+			path = Belot;
+			sourceTree = "<group>";
+		};
+		9F7A81592742AEC8002D6E38 /* Points */ = {
+			isa = PBXGroup;
+			children = (
+				9F7A815C2742AF1B002D6E38 /* ViewModel */,
+				9F7A815B2742AF14002D6E38 /* UI */,
+			);
+			path = Points;
+			sourceTree = "<group>";
+		};
+		9F7A815A2742AEE1002D6E38 /* Calculation */ = {
+			isa = PBXGroup;
+			children = (
+				9F7A81612742AFBD002D6E38 /* UI */,
+				9F7A81602742AFB7002D6E38 /* ViewModel */,
+			);
+			path = Calculation;
+			sourceTree = "<group>";
+		};
+		9F7A815B2742AF14002D6E38 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9FA942DC2745855E0091C54F /* PointsTableViewCell */,
+				9F7A81622742AFEB002D6E38 /* PointsViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9F7A815C2742AF1B002D6E38 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9F7A81642742B03B002D6E38 /* PointsViewModelImpl.swift */,
+				9F7A81662742B046002D6E38 /* PointsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9F7A815D2742AF35002D6E38 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9F7A815E2742AF48002D6E38 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		9F7A815F2742AF63002D6E38 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9F16B183273FFF0D00E281D0 /* StartController.swift */,
+				9F7A81592742AEC8002D6E38 /* Points */,
+				9F7A815A2742AEE1002D6E38 /* Calculation */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9F7A81602742AFB7002D6E38 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9F2DC13D274F015B006FF455 /* CalculationViewModel.swift */,
+				9F2DC13F274F0166006FF455 /* CalculationViewModelImpl.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9F7A81612742AFBD002D6E38 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9F2DC13B274EF56D006FF455 /* CalculationViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9F95F2042741C484000E6B3C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9F95F2052741C5A0000E6B3C /* UIView + Extension.swift */,
+				9F32BCAC27529EE9000148BF /* UIViewController + Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9FA942DC2745855E0091C54F /* PointsTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				9FA942DD274585760091C54F /* PointsTableViewCell.swift */,
+			);
+			path = PointsTableViewCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F16B17B273FFF0D00E281D0 /* BelotScore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F16B190273FFF0F00E281D0 /* Build configuration list for PBXNativeTarget "BelotScore" */;
+			buildPhases = (
+				463B62B95100708CEF86C49D /* [CP] Check Pods Manifest.lock */,
+				9F16B178273FFF0D00E281D0 /* Sources */,
+				9F16B179273FFF0D00E281D0 /* Frameworks */,
+				9F16B17A273FFF0D00E281D0 /* Resources */,
+				4393CD8E01C3633B8ECD911D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BelotScore;
+			productName = BelotScore;
+			productReference = 9F16B17C273FFF0D00E281D0 /* BelotScore.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F16B174273FFF0D00E281D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					9F16B17B273FFF0D00E281D0 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 9F16B177273FFF0D00E281D0 /* Build configuration list for PBXProject "BelotScore" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F16B173273FFF0D00E281D0;
+			productRefGroup = 9F16B17D273FFF0D00E281D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F16B17B273FFF0D00E281D0 /* BelotScore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F16B17A273FFF0D00E281D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F16B18C273FFF0F00E281D0 /* LaunchScreen.storyboard in Resources */,
+				9F16B189273FFF0F00E281D0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4393CD8E01C3633B8ECD911D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BelotScore/Pods-BelotScore-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BelotScore/Pods-BelotScore-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BelotScore/Pods-BelotScore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		463B62B95100708CEF86C49D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BelotScore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F16B178273FFF0D00E281D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F32BCAD27529EE9000148BF /* UIViewController + Extension.swift in Sources */,
+				9F2DC13C274EF56D006FF455 /* CalculationViewController.swift in Sources */,
+				9F16B184273FFF0D00E281D0 /* StartController.swift in Sources */,
+				9F7A81652742B03B002D6E38 /* PointsViewModelImpl.swift in Sources */,
+				9FA942DE274585760091C54F /* PointsTableViewCell.swift in Sources */,
+				9F2DC140274F0166006FF455 /* CalculationViewModelImpl.swift in Sources */,
+				9F7A81632742AFEB002D6E38 /* PointsViewController.swift in Sources */,
+				9F7A81672742B046002D6E38 /* PointsViewModel.swift in Sources */,
+				9F2DC13E274F015B006FF455 /* CalculationViewModel.swift in Sources */,
+				9F16B180273FFF0D00E281D0 /* AppDelegate.swift in Sources */,
+				9F95F2062741C5A0000E6B3C /* UIView + Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9F16B18A273FFF0F00E281D0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F16B18B273FFF0F00E281D0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9F16B18E273FFF0F00E281D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9F16B18F273FFF0F00E281D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F16B191273FFF0F00E281D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC354B490C187C226F90A67D /* Pods-BelotScore.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BelotScore/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ungar.BelotScore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9F16B192273FFF0F00E281D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A015141249B7764B26F4E087 /* Pods-BelotScore.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BelotScore/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ungar.BelotScore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F16B177273FFF0D00E281D0 /* Build configuration list for PBXProject "BelotScore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F16B18E273FFF0F00E281D0 /* Debug */,
+				9F16B18F273FFF0F00E281D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F16B190273FFF0F00E281D0 /* Build configuration list for PBXNativeTarget "BelotScore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F16B191273FFF0F00E281D0 /* Debug */,
+				9F16B192273FFF0F00E281D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F16B174273FFF0D00E281D0 /* Project object */;
+}
