@@ -165,9 +165,7 @@ private extension CalculationViewController {
     func setupUI(){
         self.hideKeyboardWhenTappedAround()
         view.backgroundColor = .white
-        view.addSubviews(views: callView, ourPointsContainerView, theirPointsContainerView, ourScoreSumLabel, theirScoreSumLabel, addScoreButton)
-        
-        callView.addSubviews(views: ourCallButton, theirCallButton, callLabel)
+        view.addSubviews(views: ourCallButton, theirCallButton, callLabel, ourPointsContainerView, theirPointsContainerView, ourScoreSumLabel, theirScoreSumLabel, addScoreButton)
         
         ourPointsContainerView.addArrangedSubview(ourLabel)
         ourPointsContainerView.addArrangedSubview(ourPointsScores)
@@ -182,52 +180,45 @@ private extension CalculationViewController {
     
     func setupConstraints(){
         
-        callView.snp.makeConstraints{ (make) -> Void in
-            make.top.equalTo(view.safeAreaLayoutGuide).offset(25)
-            make.leading.equalTo(view.safeAreaLayoutGuide).offset(10)
-            make.trailing.equalTo(view.safeAreaLayoutGuide).offset(-10)
-        }
         
         ourCallButton.snp.makeConstraints{ (make) -> Void in
-            make.top.equalToSuperview()
-            make.leading.equalToSuperview().offset(10)
+            make.top.equalTo(view.safeAreaLayoutGuide).offset(25)
+            make.leading.equalTo(view.safeAreaLayoutGuide).offset(25)
+            make.width.height.equalTo(15)
         }
         
         theirCallButton.snp.makeConstraints{ (make) -> Void in
-            make.top.equalToSuperview()
-            make.trailing.equalToSuperview().offset(-10)
+            make.top.equalTo(view.safeAreaLayoutGuide).offset(25)
+            make.trailing.equalTo(view.safeAreaLayoutGuide).offset(-25)
+            make.width.height.equalTo(15)
         }
         
         callLabel.snp.makeConstraints{ (make) -> Void in
-            make.top.equalToSuperview()
-            make.centerX.equalToSuperview()
-            make.leading.equalTo(ourCallButton.snp.trailing).offset(20)
-            make.trailing.equalTo(theirCallButton.snp.leading).offset(-20)
-
+            make.top.equalTo(view.safeAreaLayoutGuide).offset(25)
+            make.leading.equalTo(ourCallButton.snp.trailing)
+            make.trailing.equalTo(theirCallButton.snp.leading)
         }
         
         ourPointsContainerView.snp.makeConstraints{ (make) -> Void in
             make.top.equalTo(callLabel.snp.bottom).offset(25)
             make.leading.equalToSuperview().offset(10)
-            make.trailing.equalTo(callLabel.snp.leading)
         }
         
         theirPointsContainerView.snp.makeConstraints{ (make) -> Void in
             make.top.equalTo(callLabel.snp.bottom).offset(25)
             make.trailing.equalToSuperview().offset(-10)
-            make.leading.equalTo(callLabel.snp.trailing)
         }
         
         ourScoreSumLabel.snp.makeConstraints{ (make) -> Void in
             make.top.equalTo(ourPointsContainerView.snp.bottom).offset(30)
-            make.leading.equalToSuperview().offset(10)
-            make.trailing.equalTo(callLabel.snp.leading).offset(-20)
+            make.leading.equalTo(ourPointsContainerView.snp.leading)
+            make.trailing.equalTo(ourPointsContainerView.snp.trailing)
         }
         
         theirScoreSumLabel.snp.makeConstraints{ (make) -> Void in
             make.top.equalTo(theirPointsContainerView.snp.bottom).offset(30)
-            make.leading.equalTo(callLabel.snp.trailing).offset(30)
-            make.trailing.equalToSuperview().offset(-10)
+            make.leading.equalTo(theirPointsContainerView.snp.leading)
+            make.trailing.equalTo(theirPointsContainerView.snp.trailing)
         }
         
         addScoreButton.snp.makeConstraints{ (make) -> Void in
