@@ -22,4 +22,5 @@ protocol PointsViewModel: AnyObject {
     var restartGameSubject: ReplaySubject<()> {get}
     
     func initializeViewModelObservables() -> [Disposable]
+    func reducePoints(indexPath: Int, _ : Int,_ : Int)
 }

@@ -8,6 +8,7 @@
 import UIKit
 import SnapKit
 import Foundation
+import RxSwift
 class PointsTableViewCell: UITableViewCell {
     
     let emptyMessageLabel: UILabel = {
@@ -30,6 +31,17 @@ class PointsTableViewCell: UITableViewCell {
         label.font = .systemFont(ofSize: 24)
         return label
     }()
+    
+    let deleteButton: UIButton = {
+        let infoButton = UIButton(type: .close)
+        return infoButton
+    }()
+    
+    var cellDisposeBag = DisposeBag()
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        cellDisposeBag = DisposeBag()
+    }
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -62,7 +74,7 @@ private extension PointsTableViewCell {
         self.backgroundColor = .gray
         self.selectionStyle = .none
         
-        contentView.addSubviews(views: ourScoresLabel, theirScoresLabel)
+        contentView.addSubviews(views: ourScoresLabel, theirScoresLabel, deleteButton)
         
         setupConstraints()
     }
@@ -79,6 +91,12 @@ private extension PointsTableViewCell {
             make.centerX.equalToSuperview().offset(50)
             make.top.equalToSuperview().offset(5)
             make.bottom.equalToSuperview().offset(-5)
+        }
+        
+        deleteButton.snp.makeConstraints { (make) -> Void in
+            make.top.equalToSuperview().offset(5)
+            make.bottom.equalToSuperview().offset(-5)
+            make.trailing.equalToSuperview().offset(-5)
         }
         
     }

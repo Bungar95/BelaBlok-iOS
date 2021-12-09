@@ -227,6 +227,12 @@ extension PointsViewController: UITableViewDataSource, UITableViewDelegate {
         }else{
             pointsCell.configureCell(emptyMessage: nil, ourScore: nil, theirScore: nil)
         }
+        
+        pointsCell.deleteButton.rx.tap
+            .subscribe(onNext: { [unowned self] _ in
+                self.viewModel.reducePoints(indexPath: indexPath.row, viewModel.arrayOfScores[indexPath.row][0], viewModel.arrayOfScores[indexPath.row][1])
+            }).disposed(by: pointsCell.cellDisposeBag)
+        
         return pointsCell
     }
     

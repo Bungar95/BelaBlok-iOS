@@ -33,6 +33,19 @@ class PointsViewModelImpl: PointsViewModel {
         return disposables
     }
     
+    func reducePoints(indexPath: Int, _ ourPoints: Int, _ theirPoints: Int){
+        currentScore = [(currentScore[0] - ourPoints), (currentScore[1] - theirPoints)]
+        UserDefaults.standard.set([currentScore[0], currentScore[1]], forKey: "currentScore")
+
+        arrayOfScores.remove(at: indexPath)
+        UserDefaults.standard.set(arrayOfScores, forKey: "scores")
+
+        countDown = [countDown[0]+ourPoints, countDown[1]+theirPoints]
+        UserDefaults.standard.set([countDown[0], countDown[1]], forKey: "countdown")
+        
+        refreshValuesSubject.onNext(())
+    }
+    
 }
 
 private extension PointsViewModelImpl {
@@ -76,6 +89,5 @@ private extension PointsViewModelImpl {
         self.wins = UserDefaults.standard.array(forKey: "wins") as? [Int] ?? [0, 0]
         self.countDown = UserDefaults.standard.array(forKey: "countdown") as? [Int] ?? [pointsNeededToWin, pointsNeededToWin]
         self.arrayOfScores = UserDefaults.standard.array(forKey: "scores") as? [[Int]] ?? []
-        print(currentScore)
     }
 }
